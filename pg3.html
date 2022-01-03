@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  
+<head>
+	
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+
+<style> 
+/*When you want to select using html tag, you can directly put that tag name*/ 
+   #footer { 
+   position: fixed; 
+   left: 0px; 
+   bottom: 0px; 
+   height: 30px; 
+   width: 100%; 
+   background: skyblue; 
+  } 
+div::first-letter { 
+   font-size: 40px; 
+  } 
+
+p {
+font-family:Times-New Roman,sans-serif;
+background-color:grey;
+color:black;
+text-align:center;
+}
+
+
+h1 { 
+color:gold;
+   background-color: black; 
+font-weight:bold;
+font-family:cursive;
+text-align:center;
+  } 
+
+
+h2 { 
+color:gold;
+   background-color: black; 
+font-weight:bold;
+font-family:cursive;
+text-align:center;
+font-weight:bold;
+ } 
+  
+    .ClrThm1{ color:yellow;
+   background-color: green; 
+text-align:center;
+  } 
+  
+      .ClrThm2{ color:sky-blue;
+   background-color: lime; 
+  } 
+  
+      .ClrThm3{ color:gold;
+   background-color: grey; 
+  } 
+
+</style>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>CHAPTER THREE</title>
+
+<link href="css/style3.css" rel="stylesheet" type="text/css" />
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.1.3/firebase-app-compat.js"></script>
+  
+  <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.1.3/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.1.3/firebase-performance-compat.js"></script>
+
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
+
+<script data-ad-client="ca-pub-4276352257371841" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+      
+        .rt_cls { 
+   position: relative; 
+   border: 1px solid; 
+   left: 0px; 
+  } 
+    </style>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="public/css/style3.css">
+  </head>
+  
+  <body>
+  	<div id="wrapper">
+   <div id="branding">
+   <h1 class="logo"><a href="index.html" title="&lt; Magazine /&gt;">Kawah's Dissertation</a></h1>
+  
+  <ul class="topNav">
+	    <li><a href="index.html" class="topNavAct">Home</a></li>
+		<li><a href="#">Gis Maps</a></li>
+		<li><a href="#">Photos</a></li>
+		<li><a href="#">Semi -Structured Audio Recording Schedule</a></li>
+		<li><a href="#" class="topNavLast">Questionaire</a></li>
+        <li><a href="#">ABOUT US</a></li>
+	  </ul><br class="clear" />
+   </div>
+  
+   <div id="contant">
+    <div class="contant_1">
+	<div class="contant_1_left">
+	
+  <h2>
+       Rural Livelihoods And Protected Area Interlinkages
+       <span>August, 2021</span>
+      </h2>
+      
+	  <img src="images/c1_i1.png" width="277" height="266" alt="" />
+	
+  <h3>Rural Livelihoods And Protected Area Interlinkages</h3>
+  <br>
+  	
+  
+  <!-- Firebase BoilerPlate Code -->
+
+   <!--  TABLE OF CONTENTS LINKS --> 
+    <h4> <center>Table Of Contents <center></h4>
+		<span > <center> 
+<ul>
+		   <li class="cat002"><a href="pg1.html" >Chapter 1 </a></li>
+		   <li class="cat002"><a href="pg2.html" >Chapter 2 Literature Review</a></li>
+		   <li class="cat002"><a href="pg3.html" >Chapter 3 Methodology </a></li>
+		   <li class="cat002"><a href="pg4.html" >Chapter 4 Results And Findings</a></li>
+		  <li class="cat002"><a href="pg5.html" >Chapter  5  Discussion, Conclusions And Recommendations</a></li>
+		  </ul></center>
+		</span>
+		
+		 </div>
+		 <br class="clear" />
+	  </div>
+   
+  
+<h1><center>  CHAPTER THREE</center>  </h1>
+  
+<h1><center>  METHODOLOGY</center>  </h1>
+<br><br>
+	
+<hr>
+<h2>3.0 <br> INTRODUCTION</h2>
+<hr>
+	
+This chapter describes the methods,techniques,and tools used to collect,analyze and present the research data.<br>
+<br>
+	
+<hr>
+<h2>3.1 <br><RESEARCH DESIGN</h2> 
+
+<br><br>
+<hr>
+	A Case Study design was used  ; to examine the Rural livelihood activities undertaken by the adults in Tissoh Community, in the Kambui Hills Forest Reserve.<br>
+<hr>
+<br>
+	
+<h2>3.2<br> Description of Study Area</h2>
+
+<br>
+<br>
+<hr>
+	
+<a href="../pg2.html" ><span style="color:gold; background-color:black;">Landsat and Topographic Maps showing Study Area </a><br><br>
+	
+<img= "images/map1.jpg"  alt= "" height="80%" width"100%"> 
+<img= "images/map2.jpg"  alt= "" height="80%" width"100%"> 
+<img= "images/landSatKHFR.jpg"  alt= "LandSat Image of Study Area" height="80%" width"100%"> 
+
+<div>
+
+This research was conducted in the Kambui Hills Forest Reserve (<i>KHFRN<i>) - North Coordinates  x :7deg  51'34" y : 11Deg19'27" <br>
+The Kambui Hills Forest Reserve occupies an area of 14,335 hectares in the Eastern Province of Sierra Leone. <br>
+It is located 10 kilometres from   Kenema City  with terrain consisting of steep slopes that reach an altitude of between 100 and 645 metres. <br>
+The area mainly contains forest habitat but there is also some savanna and wetland.
+
+<br>
+</div>
+	<hr>
+
+<h3>3.2.1 
+<br>RELIEF
+</h3>
+<br><br>
+<hr>
+		
+The KHFR is part of the interior hills and plataeux regions of Sierra Leone  is characterized by ancient crystalline rocks undulating and welll drained. <br>
+The terrain of KHFR is a heterogenous landscape of rolling hills with rugged relief and isolated rock outcrops dissected by a series of watercourses and seasonally dry valleys(Gwyne Jones et al)<br>
+
+
+<br>
+<hr>
+<h3>3.2.2<br>CLIMATE </h3>
+<br><br>
+	<div>
+The study area experiences a tropical climate and comprises of two main seasons -dry and rainy seasons respectively.<br>
+The rainy season are longer from May -November with mean annual rainfall of over 500 cm,compared to other areas with a short dry season.<br>
+
+</div>
+<hr>
+	
+	
+<h2>3.3 <br>SAMPLING</h2>
+
+<hr>
+	
+Sample the sample frame for this study comprises of all adults  engaged in  rural livelihood activities that is a total of 418 persons.<br>
+A sample size of twenty percent was selected from the sample size ,that is a total of 70 adults were interviewed using recording schedule based on a semi structutred questionaired developed for the purpose of the study.<br>
+<br>
+	<br>
+		<hr>
+			
+
+<hr><h2>3.4 <br>RESEARCH INSTRUMENTS</h2><br><hr>
+<p>
+The major research insttuments usesd in aquring primary data were semi structured recording schedule,focus groups discussions,google forms and semi-structured questionaire.<br></p>
+<hr>
+	
+<h2>3.5<br> DATA COLLECTION PROCEDURES<br></h2>
+
+<h4>I. Semi Structured Questionaire :<hr></h4>
+<br>
+Semi structure questionaire administration, one questionaire was administered per respondent.Answers to close ended questions were recorded by a tick to the correct answer while the other questions the researcher search further for clarity of what the respondent might mean.<br>
+An interpreter was used as the author was not fluent in speaking Mende and also many elders preferred using Mende as their preferred medium of communication.<br>
+
+<hr>
+<h4>ii. Focus group discussions</h4>
+<hr>
+<br>
+
+
+Were designed to discus specific topics such as : local livliehood activities,local demographics,community forest management etc.<br>
+All the recorded audio clips from these discusions and  all related digital reseach media :picures,geometric coordinates can be found online on this dissertation companion website :<br>
+<mark>https: hankx-blog-001.web.app  </mark>  The companion Android app for this disserration can be found at this Website<br>
+	
+<h4>iii. Google forms :</h4>
+Was used by the researcher for online questionaire administration and was popular amongst the youths and  relative educated tech savvy  rural folks.the link to the online questionaire can be found  at this website.: https: hankx-blog-001.web.app. <br>
+SCAN  the QR Code In next page to access This Dissertation ONLINE And as an Android  Mobile Application.<br>
+	<br><br><hr>
+		
+	<h2>3.6 <br>DATA ANALYSIS</h2>
+	<br><br>
+		
+<h2>3.6.1<br> CODING OF DATA </h2>
+<hr>
+<br>
+	
+After the data was collected I made frequecncy tallies of various responses provided in the questionaire by the respondents.<br>
+A pre-coding schedule was done by assigning numbers to close-ended questions, the <em>YES </em>or <em>NO </em>responses only closed values " 1" and "2" respectively. <br>
+The codes were later transfered unto a spreadsheet into a table.<br>
+
+<hr>
+	
+3.6.2 SOURCES OF DATA
+
+<hr>
+	<br>
+Both primary and secondary data were collected in a bid to extract information on rural livelihood and protected areas forest  conservation management.<br>
+The primary data for the research was obtained through personal interviews,semistructured questionaire,personal  observations.Whilst secondary <br>
+data was obtained from relevant  published materials.<br>
+<hr>
+	<br>
+STATISTICAL APPROACHES USED<br><br>
+
+Frequency distribution ,Pie charts ,Histograms .Standard and mean devaition were employed to analyse the collected primary data.<br>
+The author also used MeteChart .com an online API for data visualization.<br><br><br>
+
+  
+  
+  
+  
+  
+  
+  
+  
+   
+ <div id="footer"> Kawah's Dissertation</div>  
+ <div id="footerContainer">
+    <p>
+	 <label>Designed by <a href=" http://hankxmultimediasolution.github.io   ">Hankx Web Masters</a></label>
+	 <span>Copyright 2021.All Rights Reserved</span>
+	</p>
+   </div>
+    
+    <button id="theme-switcher">Switch themes!</button>
+     <a href="#"> Test About </html>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥ðŸ”¥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+/
+  </body>
